@@ -1,0 +1,40 @@
+@font-face {
+    font-family: digital;
+    src: url(digital_italic.ttf);
+}
+
+body {
+    line-height: 0.75;
+}
+
+div {
+    font-family: digital;
+}
+
+.content {
+    height: 100%;
+    width: 120%;
+    margin: 0px;
+    padding: 0px;
+    /* line-height:200px;*/
+}
+
+.content-top {
+    font-family: digital;
+    font-weight: bold;
+    text-align: center;
+    color: #023702;
+    border: 10px dashed #023702;
+    min-height: 50%; 
+    min-width: 100%;
+}
+
+.content-bottom {
+    font-family: digital;
+    font-weight: bold;
+    color: orangered;
+    text-align: center;
+    border: 10px dashed orangered;
+    min-height: 50%;
+    min-width: 100%;
+}

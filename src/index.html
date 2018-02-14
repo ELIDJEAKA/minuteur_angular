@@ -2,18 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Minuteur</title>
+  <title>Chrono Arrivée</title>
   <base href="/">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-
   <meta http-equiv="refresh" content="30">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  
-
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/style.css">
+  <title>Chrono</title>
+  <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/assets/date_heure.js"></script>
+ 
 </head>
 <body>
+  <div class="content col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="content-top col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <span id="date_heure" style="font-size:25em;margin:1%;"></span>
+    </div>
+    <div class="content-bottom col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <span id="minuteur" style="font-size:22em;margin:15%;"></span>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+    window.onload = date_heure('date_heure');
+    window.onload = date_minuteur('minuteur');
+  </script>
   <app-root></app-root>
 </body>
 </html>
